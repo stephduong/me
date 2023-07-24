@@ -95,7 +95,7 @@ def shout_with_a_number(a_string, a_number):
           challenge, see if you can make the test pass with at least two ways
           of doing the same job.
     """
-    the_answer = str.upper("hello" "+"42")
+    the_answer = None
     return the_answer
 
 
