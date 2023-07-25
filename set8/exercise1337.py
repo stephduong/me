@@ -89,7 +89,6 @@ def n_counter(search_for_this, input_list=[1, 4, 1, 5, 1, 1]) -> int:
     Return an integer.
     """
     count = input_list.count(search_for_this)
-
     return count
 
 
