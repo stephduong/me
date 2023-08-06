@@ -1,1 +1,3 @@
-TODO: Reflect on what you learned this week and what is still unclear.
+I learnt that refactoring refers to the process of making your code better hence, easier to understand and read. To do this, you need to be pulling out specific bits of code that undermines one idea (especially when the code is used in several places.)
+
+Within VS CODE, red means to make sure the test fails if nothing is done while green means make the test pass. In exercise 1, the functions are difficult to process however, works fine. I had to identify the parts of the code which are repeated and pull them out as it undermines one idea. To create a wordy pyramid, i had to modify the function instead of rewrite. This function was hard to solve by myself, so I collaborated with my peers to solve it.
