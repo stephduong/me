@@ -1,1 +1,1 @@
-TODO: Reflect on what you learned this week and what is still unclear.
+During week6 I learned that requests is a library and makes it easier for me to get information from the internet.
