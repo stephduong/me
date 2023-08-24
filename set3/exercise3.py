@@ -29,9 +29,43 @@ def advancedGuessingGame():
     purpose if you can!
     """
 
+
+import random
+
+
+def get_valid_integer_input(prompt):
+    """Get a valid integer input from the user."""
+
+
+while True:
+    user_input = input(prompt)
+    try:
+        number = int(user_input)
+        return number
+
+    except ValueError:
+        print("Invalid input. Please enter an integer value.")
+    lower_bound = get_valid_integer_input("Enter the lower bound: ")
+    upper_bound = get_valid_integer_input("Enter the upper bound: ")
+
+    if lower_bound > upper_bound:
+        lower_bound, upper_bound = upper_bound, lower_bound
+
+    actual_number = random.randint(lower_bound, upper_bound)
+
+    guessed = False
+
+    while not guessed:
+        guessedNumber = get_valid_integer_input(
+            f"Guess a number between {lower_bound} and {upper_bound}: "
+        )
+    print(f"You guessed {guessedNumber},")
+
+    if guessedNumber == actual_number:
+        print(f"You got it!! It was {actual_number}")
+        guessed = True
+    elif guessedNumber < actual_number:
+        print("Too small, try again :'(")
+    else:
+        print("Too big, try again :'(")
     return "You got it!"
-    # the tests are looking for the exact string "You got it!". Don't modify that!
-
-
-if __name__ == "__main__":
-    print(advancedGuessingGame())
